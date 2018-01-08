@@ -94,6 +94,10 @@ namespace Biblioteka_kolos
             this.imie = imie;
             this.nazwisko = nazwisko;
         }
+        public override string ToString()
+        {
+            return this.imie + " " + this.nazwisko;
+        }
     }
     public class Katalog:Izarzadzanie
     {
