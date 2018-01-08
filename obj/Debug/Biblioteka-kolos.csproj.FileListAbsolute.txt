@@ -1,0 +1,7 @@
+C:\Users\Dell\OneDrive\Biblioteka-kolos\Biblioteka-kolos\bin\Debug\Biblioteka-kolos.exe.config
+C:\Users\Dell\OneDrive\Biblioteka-kolos\Biblioteka-kolos\bin\Debug\Biblioteka-kolos.exe
+C:\Users\Dell\OneDrive\Biblioteka-kolos\Biblioteka-kolos\bin\Debug\Biblioteka-kolos.pdb
+C:\Users\Dell\OneDrive\Biblioteka-kolos\Biblioteka-kolos\obj\Debug\Biblioteka-kolos.csprojResolveAssemblyReference.cache
+C:\Users\Dell\OneDrive\Biblioteka-kolos\Biblioteka-kolos\obj\Debug\Biblioteka-kolos.csproj.CoreCompileInputs.cache
+C:\Users\Dell\OneDrive\Biblioteka-kolos\Biblioteka-kolos\obj\Debug\Biblioteka-kolos.exe
+C:\Users\Dell\OneDrive\Biblioteka-kolos\Biblioteka-kolos\obj\Debug\Biblioteka-kolos.pdb
