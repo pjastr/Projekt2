@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Biblioteka_kolos
 {
-    interface Izarzadzanie
+    interface IZarzadzanie //lit.
     {
          void WypiszWszystko();
          void WyszukajPoTytule(string tytul);

@@ -5,3 +5,8 @@ C:\Users\Dell\OneDrive\Biblioteka-kolos\Biblioteka-kolos\obj\Debug\Biblioteka-ko
 C:\Users\Dell\OneDrive\Biblioteka-kolos\Biblioteka-kolos\obj\Debug\Biblioteka-kolos.csproj.CoreCompileInputs.cache
 C:\Users\Dell\OneDrive\Biblioteka-kolos\Biblioteka-kolos\obj\Debug\Biblioteka-kolos.exe
 C:\Users\Dell\OneDrive\Biblioteka-kolos\Biblioteka-kolos\obj\Debug\Biblioteka-kolos.pdb
+C:\Users\Piotrek\Source\Repos\Projekt2\bin\Debug\Biblioteka-kolos.exe.config
+C:\Users\Piotrek\Source\Repos\Projekt2\obj\Debug\Biblioteka-kolos.exe
+C:\Users\Piotrek\Source\Repos\Projekt2\obj\Debug\Biblioteka-kolos.pdb
+C:\Users\Piotrek\Source\Repos\Projekt2\bin\Debug\Biblioteka-kolos.exe
+C:\Users\Piotrek\Source\Repos\Projekt2\bin\Debug\Biblioteka-kolos.pdb

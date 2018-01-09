@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace Biblioteka_kolos
 {
-    public class Pozycja
+    public abstract class Pozycja //brakuje oznaczenia abstrakcyjności
     {
         protected string tytul;
         protected int id;
@@ -22,10 +22,8 @@ namespace Biblioteka_kolos
         {
 
         }
-        public virtual void WypiszInfo()
-        {
-            Console.WriteLine("TYTUL:"+ this.tytul + "ID:"+ this.id + "WYDAWNICTWO:" + this.wydawnictwo + "ROK WYDANIA:" + this.rokWydania);
-        }
+        public abstract void WypiszInfo(); //ta metoda ma być abstrakcyjna
+
         public string PobierzTytul()
         {
             return this.tytul;
@@ -46,11 +44,7 @@ namespace Biblioteka_kolos
         public Czasopismo(string tytul,int id,string wydawnictwo, int rokWydania,int numer):base(tytul,id,wydawnictwo,rokWydania)
         {
             this.numer = numer;
-            this.tytul = tytul;
-            this.id = id;
-            this.wydawnictwo = wydawnictwo;
-            this.rokWydania = rokWydania;
-            this.numer = numer;
+            //nie ma najmniejszego sensu dwa razy inicjować te same pola
         }
         public override void WypiszInfo()
         {
@@ -99,7 +93,7 @@ namespace Biblioteka_kolos
             return this.imie + " " + this.nazwisko;
         }
     }
-    public class Katalog:Izarzadzanie
+    public class Katalog:IZarzadzanie //lit
     {
         private string dzialTematyczny;
         private List<Pozycja> pozycje=new List<Pozycja>();
@@ -127,11 +121,19 @@ namespace Biblioteka_kolos
 
         public void WyszukajPoId(int id)
         {
-            Console.WriteLine(pozycje.Find(x =>x.PobierzId()==id));
+            pozycje.Find(x =>x.PobierzId()==id).WypiszInfo(); // błędna składnia
         }
         public void WyszukajPoTytule(string tytul)
         {
-            Console.WriteLine(pozycje.Find(x => x.PobierzTytul() == tytul));
+            pozycje.Find(x => x.PobierzTytul() == tytul).WypiszInfo(); // błędna składnia
+        }
+
+        public void Test()  //brakująca metoda
+        {
+            DodajPozycje("Gazeta Olsztyńska", 200, "Edytor", 1992, 7);
+            DodajPozycje("Gazeta Wyborcza", 123, "Agora", 2010, 23);
+            DodajPozycje("Krzyżacy", 220, "Znak", 2010, 300, "Henryk", "Sienkiewicz");
+            DodajPozycje("Krzyżacy", 221, "Znak", 2011, 298, "Henryk", "Sienkiewicz"); 
         }
     }
     class Program
@@ -141,6 +143,7 @@ namespace Biblioteka_kolos
             int wybor,numer,rokWydania,id,liczbaStron;
             string tytul, wydawnictwo,imie,nazwisko;
             Katalog nowy = new Katalog("lallala");
+            nowy.Test();  //wywołanie metody test
             do
             {
                 Console.WriteLine("Co chcesz zrobić ? Wpisz odpowiedni numer:");
@@ -150,7 +153,7 @@ namespace Biblioteka_kolos
                 Console.WriteLine("4.WYSZUKAJ PO ID");
                 Console.WriteLine("5.POKAZ ZAWARTOSC");
                 Console.WriteLine("6.WYJDZ");
-                wybor = int.Parse(Console.ReadLine());
+                wybor = int.Parse(Console.ReadLine()); 
                 switch (wybor)
                 {
                     case 1:
