@@ -128,7 +128,7 @@ namespace Biblioteka_kolos
             pozycje.Find(x => x.PobierzTytul() == tytul).WypiszInfo(); // błędna składnia
         }
 
-        public void Test()  //brakująca metoda
+        public void Test()  //brakująca metoda Test
         {
             DodajPozycje("Gazeta Olsztyńska", 200, "Edytor", 1992, 7);
             DodajPozycje("Gazeta Wyborcza", 123, "Agora", 2010, 23);
